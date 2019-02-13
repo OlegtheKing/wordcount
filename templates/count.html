@@ -1,0 +1,13 @@
+<h1>COUNT</h1>
+<a href="{% url 'home' %}"> Start Again </a>
+<br \>
+<h3>those are the words:</h3>
+<br \>
+{{passed_text}}
+<br \>
+there list of words and their entrances in parsed text:
+<br \>
+{% for word, total in counted_words %}
+{{total}} - {{word}}
+<br \>
+{% endfor %}

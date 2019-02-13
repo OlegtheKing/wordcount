@@ -1,0 +1,13 @@
+<h1><b>HOMU PAGI</b></h1>
+<h1><b>WORD COUNT SITE</b></h1>
+{{hithere}}  # this allow to use some python code
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br />
+    <input type="submit" value="Count!"/>
+</form>
+# going to following url (count/) with a parameters(words) which were inputted above
+<br />
+<form action="{% url 'about' %}">
+    <input type="submit" value="About page."/>
+</form>
